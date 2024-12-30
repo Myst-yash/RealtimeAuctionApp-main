@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.andrefrsousa.supertoolbar.SuperToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:superToolbar_centerTitle="true"
+            app:superToolbar_useLightFont="true">
+
+<!--            <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                android:id="@+id/menu_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/dp_55"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:backgroundTint="@android:color/transparent"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/ic_baseline_account_circle_24" />-->
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_55"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logon" />
+
+        </com.andrefrsousa.supertoolbar.SuperToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/backgroundshape1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/backgroundpattern"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/blur_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.github.mmin18.widget.RealtimeBlurView
+                android:id="@+id/blur_view"
+                android:visibility="gone"
+                android:elevation="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:realtimeBlurRadius="8dp"
+                app:realtimeOverlayColor="#0fff"/>
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom_bar"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            <nl.joery.animatedbottombar.AnimatedBottomBar
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FFF"
+                android:elevation="@dimen/dp_10"
+                app:abb_animationInterpolator="@android:anim/overshoot_interpolator"
+                app:abb_iconSize="20dp"
+                app:abb_indicatorAppearance="round"
+                app:abb_indicatorColor="@color/lblue60"
+                app:abb_indicatorHeight="4dp"
+                app:abb_indicatorMargin="16dp"
+                app:abb_selectedIndex="1"
+                app:abb_selectedTabType="text"
+                app:abb_tabAnimation="slide"
+                app:abb_tabAnimationSelected="slide"
+                app:abb_tabColor="@color/egray40"
+                app:abb_tabColorDisabled="@color/egray40"
+                app:abb_tabColorSelected="@color/lblue60"
+                app:abb_tabs="@menu/tabs"
+                app:abb_textAppearance="@style/BottomNavigationTextStyle"
+                app:abb_textSize="@dimen/dp_13" />
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/navi_menu"
+            app:itemIconSize="@dimen/dp_23"
+            app:itemShapeFillColor="@color/drawer_selector"
+            app:itemIconTint="@color/drawer_text_color_selector"
+            app:itemTextColor="@color/drawer_text_color_selector"
+            app:headerLayout="@layout/drawer_header"
+            >
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

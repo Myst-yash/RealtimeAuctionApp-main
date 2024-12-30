@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:shadowColor">@color/lblue60</item>
+        <item name="elevation">30dp</item>
+    </style>
+    <style name="BaseAppTheme" parent="android:Theme.Material">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">
+            @style/MyTextboxShapeRounded
+        </item>
+        <item name="materialThemeOverlay">@style/MyThemeOverlayOutlinedDense</item>
+        <item name="boxStrokeColor">@color/lblue30</item>
+        <item name="colorControlNormal">@color/lblue40</item>
+
+        <item name="boxStrokeWidth">.5dp</item>
+        <item name="errorTextAppearance">@style/ErrorTextAppearance</item>
+
+    </style>
+
+    <style name="MyTextboxShapeRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+    <style name="ThemeOverlay.TextInputLayout.TextView" parent="">
+        <item name="android:textViewStyle">@style/Widget.TextView.SingleLineEllipsized</item>
+    </style>
+
+    <style name="Widget.TextView.SingleLineEllipsized" parent="">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ErrorTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="HintTextAppearance">
+        <item name="android:fontFamily">@font/lexend_deca</item>
+        <item name="android:textColor">@color/lblue30</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="OutlinedRoundedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearanceOverlay">@style/MyButtonShapeRounded</item>
+        <item name="boxStrokeColor">@color/lblue40</item>
+        <item name="hintTextColor">@color/lblue40</item>
+        <item name="colorControlNormal">@color/lblue60</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+    <style name="MyButtonShapeRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+    <style name="MyThemeOverlayOutlinedDense">
+        <item name="editTextStyle">@style/MyTextInputEditText_outlinedBox_dense_h
+        </item>
+    </style>
+
+    <style name="MyTextInputEditText_outlinedBox_dense_h" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+
+    <style name="BottomNavigationTextStyle">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/lexend_deca</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Maestro">
+        <item name="cardFrontBackground">@color/lblue30</item>
+        <item name="cardTextColor">#ffffff</item>
+    </style>
+
+
+    <style name="DefaultVisa">
+        <item name="cardFrontBackground">@drawable/card_bg</item>
+        <item name="cardBackBackground">@drawable/card_bg</item>
+        <item name="cardBackLogo">@drawable/logo_white_notxt</item>
+        <item name="cardFrontLogo">@drawable/logo_white_notxt</item>
+    </style>
+
+
+</resources>

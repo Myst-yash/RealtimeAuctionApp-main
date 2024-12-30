@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="eblue40">#00A5E5</color>
+    <color name="eblue60">#0285BE</color>
+    <color name="eblue80">#00578A</color>
+
+
+    <color name="egray20">#F8F8F8</color>
+    <color name="egray30">#D3D3D3</color>
+    <color name="egray40">#B2B2B2</color>
+    <color name="egray50">#929292</color>
+    <color name="egray60">#717171</color>
+    <color name="egray70">#515151</color>
+    <color name="egray80">#303030</color>
+    <color name="egray90">#101010</color>
+
+    <color name="lblue10">#DDE5FD</color>
+    <color name="lblue20">#BBC8FF</color>
+    <color name="lblue30">#768BFF</color>
+    <color name="lblue40">#2E5EF4</color>
+    <color name="lblue50">#0035C0</color>
+    <color name="lblue60">#212E55</color>
+    <color name="lbluedie60">#70778A</color>
+
+    <color name="lmint10">#52C4C0</color>
+
+    <color name="lgray10">#EFF5FF</color>
+    <color name="lgray20">#A8A5C0</color>
+    <color name="lgray30">#EBEBEB</color>
+
+    <color name="bgray">#F7F7F7</color>
+
+    <color name="eyellow10">#FEF7DB</color>
+    <color name="eyellow20">#FFEAA6</color>
+    <color name="epurple10">#DADDFC</color>
+    <color name="epurple20">#BAB8E3</color>
+    <color name="ered10">#FCDCDC</color>
+    <color name="ered20">#F9BAB9</color>
+    <color name="egreen10">#FCDCDC</color>
+    <color name="egreen20">#F9BAB9</color>
+
+
+
+    <color name="bg">#f5f5f5</color>
+    <color name="bgnew">#464756</color>
+
+    <color name="filtersfab">#3f51b5</color>
+    <color name="filters_header">#303f9f</color>
+    <color name="filters_buttons">#ff4081</color>
+    <color name="filters_buttons_selected">#c2185b</color>
+    <color name="filters_chips">#b3e5fc</color>
+
+    <color name="orange">#ff5722</color>
+    <color name="brown">#795548</color>
+
+
+    <color name="colorAccent">#FF6284</color>
+    <color name="windowBackground">#51D1E2</color>
+
+    <color name="tab_bg_color">#084A6E</color>
+    <color name="bottom_bar_color">#33779C</color>
+
+    <color name="toolbar_title_color">#5FD5E1</color>
+
+    <color name="title_color">#84D6DE</color>
+    <color name="subtitle_color">#B0E7EF</color>
+
+    <color name="filter_pill_color">#297195</color>
+    <color name="filter_pill_selected_color">@color/windowBackground</color>
+
+    <color name="filter_seek_bar_color">#1C6690</color>
+    <color name="filter_seek_bar_selected_color">#359CBA</color>
+
+    <color name="filter_icon_color">#89AFC2</color>
+    <color name="filter_icon_active_color">@android:color/white</color>
+
+    <color name="list_item_bg_collapsed">#E2FAFF</color>
+    <color name="list_item_bg_expanded">@android:color/white</color>
+    <color name="list_item_fg">#aa7CDDE7</color>
+
+    <color name="tab_unselected_color">#356E8C</color>
+    <color name="tab_selected_color">@android:color/white</color>
+    <color name="grey">#7a7a7a</color>
+    <color name="lightGrey">#aaaaaa</color>
+    <color name="veryLightGrey">#f0f0f0</color>
+    <color name="purple">#7d64e6</color>
+    <color name="yellow">#ffee00</color>
+
+</resources>
